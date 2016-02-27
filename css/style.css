@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding:0;
+}
+
+
+	body {
+		background-color: grey 
+	}
+	h3 {
+		font-family: 'Poiret One', cursive;
+	}
+	header {
+		padding:10px;
+		 
+	}
+	header h1{
+		color: #223A42;	
+		margin: 10px 0px;
+		font-family: 'Arimo', sans-serif;
+		text-align: center;
+	}
+	header h2{
+		color:#000;
+		margin: 10px 0px;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 100;
+		text-align: center;
+	}
+#content {
+	
+	/*border:solid 5px black;*/
+	background-color: #A9CBD6;
+	margin:auto auto auto auto;
+	position:relative;
+}
+
+
+	.hover-grow li img{
+		width:100px; 
+		display:block;
+		-webkit-transition: width .3s; /* Safari */
+    	transition: width .3s;
+	}
+	.hover-grow li:hover img{
+		width:400px;
+	}
+	.dog-list {
+		list-style-type: none;
+		width:100%;
+		display:block;
+		float:left;
+		/*width:100%;*/
+	}
+
+	.dog-list li {
+		display: block; 
+		float:left;
+		/*height:300px;*/
+		height:0px;
+		position:relative; 
+		overflow: hidden;
+		/*border: solid 1px red;*/
+		box-sizing:border-box;
+		background-size:cover;
+		background-position: center center;
+		width:25%;
+		padding-top:25%;
+	}
+
+	
+
+	.dog-list li img {
+		display:none;
+	}
+
+	.dog-list li * {
+		max-width: 100%;
+	}
+
+	.dog-list li h3 {
+		position:absolute; 
+		bottom:0px; left:0;
+		background-color: rgba(255,255,255,.6);
+		width:100%;
+		box-sizing:border-box;
+		padding: 10px 10px 10px 10px;
+
+	}
+	.dog-list li h3 a:link {
+		text-decoration: none;
+	}
+	.dog-list li h3 a:visited {
+		
+	}
+	.dog-list li h3 a:hover {
+		text-decoration: underline
+	}
+	.dog-list li h3 a:active {
+		
+	}
+
+		@media screen and (max-width:1875px){
+		.dog-list li {
+			width:20%;
+			padding-top:20%;
+
+		}
+		
+		
+	}
+		@media screen and (max-width:1500px){
+		.dog-list li {
+			width:25%;
+			padding-top:25%;
+
+		}
+		
+		
+	}
+
+
+	@media screen and (max-width:1125px) and (min-width:751px){ 
+		.dog-list li {
+			width:33%;
+			padding-top:33%;
+
+		}
+		.dog-list li:nth-child(3n - 1) {
+			width:34%;
+		}	
+	}
+		@media screen and (max-width:750px){
+		.dog-list li {
+			width:50%;
+			padding-top:50%;
+
+		}
+
+	}
+
+	@media screen and (max-width:375px){
+		.dog-list li {
+			width:100%;
+			padding-top:100%;
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+/*
+This is for the single page
+*/
+
+.dog-single img.single-img {
+	width:100%;
+	max-width:800px;
+	display:block;
+	margin:0 auto;
+
+}
+
+
